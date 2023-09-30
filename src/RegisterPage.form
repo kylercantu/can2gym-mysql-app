@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="RegisterPage">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="571" height="469"/>
+    </constraints>
+    <properties>
+      <background color="-13355980"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="4798e" class="javax.swing.JLabel" binding="registerTitleLbl">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Berlin Sans FB Demi" size="48" style="1"/>
+          <foreground color="-270"/>
+          <text value="Register"/>
+        </properties>
+      </component>
+      <component id="80539" class="javax.swing.JLabel" binding="emailLbl">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <text value="Email:"/>
+        </properties>
+      </component>
+      <component id="eb93b" class="javax.swing.JTextField" binding="emailTF">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="9aaff" class="javax.swing.JLabel" binding="usernameLbl">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <text value="Username:"/>
+        </properties>
+      </component>
+      <component id="bd600" class="javax.swing.JTextField" binding="usernameTF">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="82b20" class="javax.swing.JLabel" binding="passwordLbl">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <text value="Password:"/>
+        </properties>
+      </component>
+      <component id="af754" class="javax.swing.JTextField" binding="passwordTF">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="7a3c7" class="javax.swing.JLabel" binding="firstNameLbl">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <text value="First Name:"/>
+        </properties>
+      </component>
+      <component id="c3910" class="javax.swing.JTextField" binding="firstNameTF">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="4285e" class="javax.swing.JButton" binding="registerBtn">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <foreground color="-16777216"/>
+          <text value="Register"/>
+        </properties>
+      </component>
+      <component id="d8e8a" class="javax.swing.JButton" binding="backBtn">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <foreground color="-16777216"/>
+          <text value="Back"/>
+        </properties>
+      </component>
+      <component id="5e705" class="javax.swing.JLabel" binding="lastNameLbl">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <text value="Last Name:"/>
+        </properties>
+      </component>
+      <component id="ad1d1" class="javax.swing.JTextField" binding="lastNameTF">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="fc270" class="javax.swing.JLabel" binding="streetLbl">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Street Address:"/>
+        </properties>
+      </component>
+      <component id="ccc7a" class="javax.swing.JTextField" binding="streetTF">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="a8a64" class="javax.swing.JLabel" binding="cityLbl">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="City:"/>
+        </properties>
+      </component>
+      <component id="666c3" class="javax.swing.JTextField" binding="cityTF">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="cc5fe" class="javax.swing.JLabel" binding="stateLbl">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="State:"/>
+        </properties>
+      </component>
+      <component id="e6e79" class="javax.swing.JComboBox" binding="stateComboBox">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <model>
+            <item value="AL"/>
+            <item value="AK"/>
+            <item value="AZ"/>
+            <item value="AR"/>
+            <item value="CA"/>
+            <item value="CO"/>
+            <item value="CT"/>
+            <item value="DE"/>
+            <item value="FL"/>
+            <item value="GA"/>
+            <item value="HI"/>
+            <item value="ID"/>
+            <item value="IL"/>
+            <item value="IN"/>
+            <item value="IA"/>
+            <item value="KS"/>
+            <item value="KY"/>
+            <item value="LA"/>
+            <item value="ME"/>
+            <item value="MD"/>
+            <item value="MA"/>
+            <item value="MI"/>
+            <item value="MN"/>
+            <item value="MS"/>
+            <item value="MO"/>
+            <item value="MT"/>
+            <item value="NE"/>
+            <item value="NV"/>
+            <item value="NH"/>
+            <item value="NJ"/>
+            <item value="NM"/>
+            <item value="NY"/>
+            <item value="NC"/>
+            <item value="ND"/>
+            <item value="OH"/>
+            <item value="OK"/>
+            <item value="OR"/>
+            <item value="PA"/>
+            <item value="RI"/>
+            <item value="SC"/>
+            <item value="SD"/>
+            <item value="TN"/>
+            <item value="TX"/>
+            <item value="UT"/>
+            <item value="VT"/>
+            <item value="VA"/>
+            <item value="WA"/>
+            <item value="WV"/>
+            <item value="WI"/>
+            <item value="WY"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f00a4" class="javax.swing.JLabel" binding="zipLbl">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Zip Code:"/>
+        </properties>
+      </component>
+      <component id="bf1d1" class="javax.swing.JTextField" binding="zipCodeTF">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+      <component id="725f9" class="javax.swing.JLabel" binding="phoneLbl">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-270"/>
+          <text value="Phone Number:"/>
+        </properties>
+      </component>
+      <component id="9b755" class="javax.swing.JTextField" binding="phoneTF">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
