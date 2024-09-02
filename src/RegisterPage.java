@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-public class RegisterPage extends JFrame{
+public class RegisterPage{
     private JPanel mainPanel;
     private JLabel registerTitleLbl;
     private JTextField emailTF;
@@ -32,20 +32,18 @@ public class RegisterPage extends JFrame{
     private JTextField phoneTF;
     private JLabel phoneLbl;
 
-    private final int FRAME_WIDTH = 800;
-    private final int FRAME_HEIGHT = 700;
-
     private Connection conn = null;
 
 
-    RegisterPage (){
-        FrameUtil.setFrame(mainPanel);
+
+    RegisterPage (String title){
+        FrameUtil.setFrame(mainPanel, title);
         //Sends the user back to the login screen when they click back
         backBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 FrameUtil.disposeFrame();
-                LoginPage lp = new LoginPage();
+                LoginPage lp = new LoginPage("Can2Gym");
             }
         });
 
@@ -53,13 +51,14 @@ public class RegisterPage extends JFrame{
         registerBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                FrameUtil.disposeFrame();
                 registerUser();
             }
         });
     }//End constructor
 
     //Takes all the user's inputs and stores them into the DB
-    private void registerUser(){
+    public void registerUser(){
         String fName = firstNameTF.getText().trim();
         String lName = lastNameTF.getText().trim();
         String street = streetTF.getText().trim();
@@ -83,7 +82,7 @@ public class RegisterPage extends JFrame{
             //Establish the DB connection
             conn = DBUtil.getConnection();
 
-            //Get resuletset containing usernaames to check if the username already exists within the DB
+            //Get resultset containing usernames to check if the username already exists within the DB
             String getAllUsernamesQuery = "SELECT ACCOUNT_USERNAME FROM ACCOUNT;";
             Statement usernameStmt = conn.createStatement();
             ResultSet usernameResultSet = usernameStmt.executeQuery(getAllUsernamesQuery); //Place that stores the retreived usernames to iterate over

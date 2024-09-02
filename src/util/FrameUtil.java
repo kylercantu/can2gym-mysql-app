@@ -3,12 +3,12 @@ package util;
 import javax.swing.*;
 
 public class FrameUtil{
-    private static final int FRAME_WIDTH = 800;
-    private static final int FRAME_HEIGHT = 700;
+    private static final int FRAME_WIDTH = 1500;
+    private static final int FRAME_HEIGHT = 800;
 
     private static JFrame frame = new JFrame();
-    public static void setFrame(JPanel panel){
-        frame.setTitle("KC Gym");
+    public static void setFrame(JPanel panel, String title){
+        frame.setTitle(title);
         frame.setContentPane(panel);
         frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
         frame.setLocationRelativeTo(null);
@@ -20,5 +20,6 @@ public class FrameUtil{
     public static void disposeFrame(){
         frame.dispose();
     }//end disposeFrame()
+
 
 }//end class

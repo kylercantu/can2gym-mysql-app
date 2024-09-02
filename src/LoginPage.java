@@ -1,4 +1,5 @@
 import util.DBUtil;
+import util.FrameUtil;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -7,19 +8,23 @@ import java.sql.*;
 
 public class LoginPage extends JFrame{
     private JPanel mainPanel;
-    private JTextField usernameTF;
+    public JTextField usernameTF;
     private JLabel usernameLbl;
     private JLabel loginTitleLbl;
     private JLabel passwordLbl;
-    private JTextField passwordTF;
+    private  JTextField passwordTF;
     private JButton loginBtn;
     private JButton exitBtn;
     private JButton createAcctBtn;
 
     private final int FRAME_WIDTH = 500;
     private final int FRAME_HEIGHT = 300;
-    LoginPage(){
-        setFrame();
+
+    //Default constructor
+    LoginPage (){}
+
+    LoginPage(String title){
+        setFrame(title);
         loginBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,8 +39,8 @@ public class LoginPage extends JFrame{
         createAcctBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
-                RegisterPage rp = new RegisterPage();
+                FrameUtil.disposeFrame();
+                RegisterPage rp = new RegisterPage("Can2Gym");
             }
         });
         exitBtn.addActionListener(new ActionListener() {
@@ -48,8 +53,8 @@ public class LoginPage extends JFrame{
         setVisible(true);
     }//End Constructor
 
-    private void setFrame(){
-        setTitle("KC Gym");
+    private void setFrame(String title){
+        setTitle(title);
         setSize(FRAME_WIDTH, FRAME_HEIGHT);
         setContentPane(mainPanel);
         setLocationRelativeTo(null);
@@ -69,9 +74,16 @@ public class LoginPage extends JFrame{
             Statement userPassStmt = conn.createStatement();
             ResultSet usernameResultSet = userPassStmt.executeQuery(userPassQuery);
 
+            //If the username and password are associated with each other, then continue, else display message saying "incorrect login"
             if(validateUser(usernameResultSet, username, password)){
-                dispose();
-                MemberProfile mp = new MemberProfile();
+                //If it's an admin logging on then open the admin page, else it's a member
+                if(username.equals("admin") && password.equals("admin")){
+                    dispose();
+                    AdminPage ap = new AdminPage("Can2Gym");
+                } else {
+                    dispose();
+                    MemberProfilePage mp = new MemberProfilePage(username); //Take the username that the user enters in the textfield on the login page
+                }
             } else {
                 JOptionPane.showMessageDialog(null, "Incorrect Login!");
             }
@@ -99,5 +111,6 @@ public class LoginPage extends JFrame{
 
         }
         return false;
-    }
+    }//end validateUser()
+
 }//End Class

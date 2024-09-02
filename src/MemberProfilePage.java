@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-public class MemberProfile{
+public class MemberProfilePage {
     private JPanel mainPanel;
     private JPanel accoutInfoPanel;
     private JPanel classesPanel;
@@ -22,7 +22,7 @@ public class MemberProfile{
     private JLabel phoneLbl;
 
 
-    MemberProfile(String username) throws SQLException {
+    MemberProfilePage(String username) throws SQLException {
         FrameUtil.setFrame(mainPanel, "Can2Gym");
         populateAccountInfo(username);
 
